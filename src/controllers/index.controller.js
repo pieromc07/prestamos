@@ -73,8 +73,8 @@ const consultar = async (req,res) =>{
 }
 
 const mensaje = (req,res) =>{
-    
-    sgMail.setApiKey('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');
+    res.send('holiwis');
+ /*    sgMail.setApiKey('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');
 
     const msg = {
         to: 'luchitoabantomartinez@gmail.com',
@@ -91,7 +91,7 @@ const mensaje = (req,res) =>{
         .catch((error) => {
             console.error(error)
             res.status(500).json( { message : 'Error sending email', res : error });
-        });
+        }); */
 }
 
 module.exports = {

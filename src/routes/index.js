@@ -8,7 +8,7 @@ router.post('/users', createUsers);
 router.get('/solicitudes',getSolicitudes);
 router.post('/solicitudes',postSolicitudes);
 router.post('/agregar', postAgregar);
-router.post('/', mensaje);
+router.get('/', mensaje);
 router.post('/consultar', consultar ); 
 module.exports = router;
 
