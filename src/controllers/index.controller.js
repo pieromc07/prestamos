@@ -72,11 +72,11 @@ const consultar = async (req, res) => {
 }
 
 const mensaje = (req, res) => {
-    sgMail.setApiKey('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');
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
     const msg = {
-        to: 'piero0716.mc@gmail.com',
-        from: 'juecepeprestamos@gmail.com',
+        to: 'piero0716.mc@gmail.com', // correo a quien se manda el mensaje
+        from: 'juecepeprestamos@gmail.com',// correo de la cuenta del api key
         subject: `Estado de Solicitud - Cliente`,
         text: 'Su solicitud ha sido enviada, su estado actual es EN PROCESO.',
     }
