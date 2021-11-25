@@ -73,7 +73,7 @@ const consultar = async (req,res) =>{
 }
 
 const mensaje = (req,res) =>{
-    res.send('holiwis');
+    
  /*    sgMail.setApiKey('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');
 
     const msg = {
