@@ -1,4 +1,3 @@
-const { json } = require('express');
 const sgMail = require('@sendgrid/mail')
 const { Pool } = require('pg');
 const pool = new Pool({
@@ -73,11 +72,10 @@ const consultar = async (req, res) => {
 }
 
 const mensaje = (req, res) => {
-    // res.send('mensaje');
     sgMail.setApiKey('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');
 
     const msg = {
-        to: 'luchitoabantomartinez@gmail.com',
+        to: 'piero0716.mc@gmail.com',
         from: 'juecepeprestamos@gmail.com',
         subject: `Estado de Solicitud - Cliente`,
         text: 'Su solicitud ha sido enviada, su estado actual es EN PROCESO.',
